@@ -1,0 +1,20 @@
+ConfigureStore : la idea del store es que cuando se necesite cualquier pieza del estado,
+ en store se va a alojar
+
+ No necesariamente tiene que alojarse en el store todo, puede que necesitemos un estado local 
+ en algun componente y entonces usar useState o asi
+
+Pero la idea es que cuando necesitemos cualquier informacion del estado lo busquemos en el store
+
+
+Provider : Ocupamos proveer el store a todos los componentes de react, por eso encerramos 
+App usando <Provider></Provider>
+
+Slice : El counter Slice nos permite crear una serie de reducers, definir un initial State y un nombre
+con el cual las acciones saldran a tal lugar
+El slice es una funcion que recibe un objeto
+
+Redux Toolkit nos permite escribir codigo que muta, el state es lo que muta
+
+
+Dentro de la accion viene el Payload
