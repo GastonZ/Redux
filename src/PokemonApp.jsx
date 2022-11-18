@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { getPokemons } from './features/pokemon/thunks'
 
 function PokemonApp() {
+  // Crea mi dispatch function que usare para disparar o despachar cualquier accion
+  const dispatch = useDispatch()
+
+  useEffect(()=> {
+    dispatch( getPokemons() )
+  }, [])
+
   return (
     <>
     <h1>
